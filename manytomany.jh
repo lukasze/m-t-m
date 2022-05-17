@@ -1,0 +1,16 @@
+
+entity Student {
+	firstName String,
+	lastName String
+}
+
+entity Lab {
+	title String,
+	descritpion String
+}
+
+
+relationship ManyToMany {
+	Lab{student} to Student{lab}
+}
+
