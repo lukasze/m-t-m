@@ -1,0 +1,17 @@
+
+entity Student {
+	title String,
+	description String
+}
+
+entity Class {
+	jobTitle String,
+	minSalary Long,
+	maxSalary Long
+}
+
+
+relationship ManyToMany {
+	Class{student} to Student{class}
+}
+
