@@ -1,0 +1,32 @@
+{
+  "applications": "*",
+  "changelogDate": "20220517221131",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "lab",
+  "fields": [
+    {
+      "fieldName": "title",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "descritpion",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Lab",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "student",
+      "otherEntityRelationshipName": "lab",
+      "ownerSide": true,
+      "relationshipName": "student",
+      "relationshipType": "many-to-many"
+    }
+  ],
+  "service": "no"
+}

@@ -1,0 +1,32 @@
+{
+  "applications": "*",
+  "changelogDate": "20220517221130",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "student",
+  "fields": [
+    {
+      "fieldName": "firstName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "lastName",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Student",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "lab",
+      "otherEntityRelationshipName": "student",
+      "ownerSide": false,
+      "relationshipName": "lab",
+      "relationshipType": "many-to-many"
+    }
+  ],
+  "service": "no"
+}
